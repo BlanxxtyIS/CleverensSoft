@@ -5,6 +5,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{3D92717B-1399-4B5D-9C86-1FAAA0F046DC}|CleverensSoft\\CleverensSoft.csproj|c:\\users\\zver\\desktop\\cleverenssoft\\cleverenssoft\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D92717B-1399-4B5D-9C86-1FAAA0F046DC}|CleverensSoft\\CleverensSoft.csproj|solutionrelative:cleverenssoft\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D92717B-1399-4B5D-9C86-1FAAA0F046DC}|CleverensSoft\\CleverensSoft.csproj|c:\\users\\zver\\desktop\\cleverenssoft\\cleverenssoft\\input.log||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{3D92717B-1399-4B5D-9C86-1FAAA0F046DC}|CleverensSoft\\CleverensSoft.csproj|solutionrelative:cleverenssoft\\input.log||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D92717B-1399-4B5D-9C86-1FAAA0F046DC}|CleverensSoft\\CleverensSoft.csproj|c:\\users\\zver\\desktop\\cleverenssoft\\cleverenssoft\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D92717B-1399-4B5D-9C86-1FAAA0F046DC}|CleverensSoft\\CleverensSoft.csproj|solutionrelative:cleverenssoft\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D92717B-1399-4B5D-9C86-1FAAA0F046DC}|CleverensSoft\\CleverensSoft.csproj|c:\\users\\zver\\desktop\\cleverenssoft\\cleverenssoft\\cleverenssoft.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3D92717B-1399-4B5D-9C86-1FAAA0F046DC}|CleverensSoft\\CleverensSoft.csproj|solutionrelative:cleverenssoft\\cleverenssoft.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,13 +38,52 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CleverensSoft",
+              "DocumentMoniker": "C:\\Users\\Zver\\Desktop\\CleverensSoft\\CleverensSoft\\CleverensSoft.csproj",
+              "RelativeDocumentMoniker": "CleverensSoft\\CleverensSoft.csproj",
+              "ToolTip": "C:\\Users\\Zver\\Desktop\\CleverensSoft\\CleverensSoft\\CleverensSoft.csproj",
+              "RelativeToolTip": "CleverensSoft\\CleverensSoft.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-11T07:22:32.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "input.log",
+              "DocumentMoniker": "C:\\Users\\Zver\\Desktop\\CleverensSoft\\CleverensSoft\\input.log",
+              "RelativeDocumentMoniker": "CleverensSoft\\input.log",
+              "ToolTip": "C:\\Users\\Zver\\Desktop\\CleverensSoft\\CleverensSoft\\input.log",
+              "RelativeToolTip": "CleverensSoft\\input.log",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVDhPjVNLTgJBEG1lwpoFB3GNK9fieA48hD8iwT/ihwgSDAIHgAGXXsEV18CNzL/LquqZdsYM6kteXqcy3fWqpmpNRBgOhyABBEgpAFVKPIMUcYzUyOU\u002BXM/b2qtU3vkSfRjjZTCAMAw1A2LwzdFoBPP5HNqdzuL27n4juibWI\u002BUshBA1DIkhEx9iEorFotgslQqGYbxxAGFEqt1MxmPWJLbLZdZ\u002Bv89q5PMFPiTR6z2zdaxR0fXA0XTBcVywkb4fwHXjRteecIDNQ7UmExVYAdPcxYaqclN46na5WenMKjtlVnTYwcXlVYaDqImW9beD5N/TeGy32QHXm6hZ03ZgiSQHp2fnWQ4oBmJqWSqwAqZpZjt4aLXAD4J0VqyZsmoubfB8H2r1eoaD6NXZ9HcHO\u002BSA3f4AjifXl8rItOETM8ckB9WTWpYD9RdeZ1PWVWAHWXPQaDb59f/w8LiqHeh1pvGkCaP6qB8yXusoxmuNZ7XmII4O9vGuEF86osuDYRkpYQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-07-11T07:28:40.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Server.cs",
+              "DocumentMoniker": "C:\\Users\\Zver\\Desktop\\CleverensSoft\\CleverensSoft\\Server.cs",
+              "RelativeDocumentMoniker": "CleverensSoft\\Server.cs",
+              "ToolTip": "C:\\Users\\Zver\\Desktop\\CleverensSoft\\CleverensSoft\\Server.cs",
+              "RelativeToolTip": "CleverensSoft\\Server.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T07:22:42.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Zver\\Desktop\\CleverensSoft\\CleverensSoft\\Program.cs",
               "RelativeDocumentMoniker": "CleverensSoft\\Program.cs",
               "ToolTip": "C:\\Users\\Zver\\Desktop\\CleverensSoft\\CleverensSoft\\Program.cs",
               "RelativeToolTip": "CleverensSoft\\Program.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAQwE8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAIwJ8AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-09T12:22:04.899Z",
               "EditorCaption": ""

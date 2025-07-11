@@ -1,4 +1,7 @@
-﻿using System.Text;
+﻿using CleverensSoft;
+using System.Globalization;
+using System.Text;
+using System.Text.RegularExpressions;
 
 Console.WriteLine("""
             Тестовое задание, CleverensSoft!
@@ -58,7 +61,7 @@ Console.WriteLine("""
     |    Задание 2. Тестирование сервера на многопоточность.   |
     -----------------------------------------------------------
 
-    Введите количество итерация с классом:
+    Введите количество итераций с классом:
     Каждая кратная '5' итерация будет вызывать GetCount, отсальные AddToCount!
     """);
 
@@ -78,35 +81,90 @@ Parallel.For(0, serverIteration, i =>
     }
 });
 
-//Не стал выносить в новый файл
-public static class Server
+
+Console.WriteLine("""
+
+
+    -----------------------------------------------------------
+    |    Задание 3. Стандартизирование лог-файлов.            |
+    -----------------------------------------------------------
+    
+    """);
+
+string inputPath = "input.log";
+string outputPath = "output.log";
+
+if (!File.Exists(inputPath))
 {
-    private static int _count = 0;
-    private static readonly ReaderWriterLockSlim _lock = new ReaderWriterLockSlim();    
-
-    public static void GetCount()
-    {
-        _lock.EnterReadLock();
-        try
-        {
-            Console.WriteLine($"Количество: {_count}");
-        }
-        finally
-        {
-            _lock.ExitReadLock();
-        }
-    }
-
-    public static void AddToCount(int value)
-    {
-        _lock.EnterWriteLock();
-        try
-        {
-            _count += value;
-        } 
-        finally
-        {
-            _lock.ExitWriteLock();
-        }
-    }
+    Console.WriteLine($"Файл не найден: {inputPath}");
+    return;
 }
+
+
+var lines = File.ReadAllLines(inputPath);
+using var writer = new StreamWriter(outputPath);
+
+foreach (var line in lines)
+{
+    if (string.IsNullOrEmpty(line)) 
+        continue;
+
+    var result = ParseLogLine(line);
+    if (result != null)
+    {
+        writer.WriteLine(result);
+    }
+
+    Console.WriteLine("Файл успешно преобразован.");
+}
+
+static string? ParseLogLine(string line)
+{
+    var format1 = new Regex(@"^(?<date>\d{2}\.\d{2}\.\d{4}) (?<time>\d{2}:\d{2}:\d{2}\.\d{3}) (?<level>\w+)\s+(?<message>.+)$");
+    var format2 = new Regex(@"^(?<date>\d{4}-\d{2}-\d{2}) (?<time>\d{2}:\d{2}:\d{2}\.\d{3}) (?<level>\w+)(?: \[!!!\])?(?<method>\S+)?\s+(?<message>.+)$");
+
+    Match match;
+
+    if ((match = format1.Match(line)).Success)
+    {
+        string date = ConvertDate(match.Groups["date"].Value, "dd.MM.yyyy");
+        string time = match.Groups["time"].Value;
+        string level = NormalizeLevel(match.Groups["level"].Value);
+        string method = "DEFAULT";
+        string message = match.Groups["message"].Value.Trim();
+
+        return $"{date}\t{time}\t{level}\tDEFAULT\t{method}\t{message}";
+    }
+    else if ((match = format2.Match(line)).Success)
+    {
+        string date = ConvertDate(match.Groups["date"].Value, "yyyy-MM-dd");
+        string time = match.Groups["time"].Value;
+        string level = NormalizeLevel(match.Groups["level"].Value);
+        string method = string.IsNullOrWhiteSpace(match.Groups["method"].Value) ? "DEFAULT" : match.Groups["method"].Value.Trim();
+        string message = match.Groups["message"].Value.Trim();
+
+        return $"{date}\t{time}\t{level}\tDEFAULT\t{method}\t{message}";
+    }
+
+    return null; // Неизвестный формат строки
+}
+
+static string ConvertDate(string input, string format)
+{
+    DateTime date = DateTime.ParseExact(input, format, CultureInfo.InvariantCulture);
+    return date.ToString("dd-MM-yyyy");
+}
+
+static string NormalizeLevel(string level)
+{
+    return level.ToUpper() switch
+    {
+        "INFO" or "INFORMATION" => "INFO",
+        "WARN" or "WARNING" => "WARN",
+        "ERROR" => "ERROR",
+        "DEBUG" => "DEBUG",
+        _ => "UNKNOWN"
+    };
+}
+
+

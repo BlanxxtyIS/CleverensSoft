@@ -13,3 +13,4 @@ C:\Users\Zver\Desktop\CleverensSoft\CleverensSoft\obj\Debug\net9.0\refint\Clever
 C:\Users\Zver\Desktop\CleverensSoft\CleverensSoft\obj\Debug\net9.0\CleverensSoft.pdb
 C:\Users\Zver\Desktop\CleverensSoft\CleverensSoft\obj\Debug\net9.0\CleverensSoft.genruntimeconfig.cache
 C:\Users\Zver\Desktop\CleverensSoft\CleverensSoft\obj\Debug\net9.0\ref\CleverensSoft.dll
+C:\Users\Zver\Desktop\CleverensSoft\CleverensSoft\bin\Debug\net9.0\input.log

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CleverensSoft")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd8034e4535eb92a98f2c01cfe7a65e6f9c626c6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+13fe9dc1154a3c77f85725babcf2c82b1a003e65")]
 [assembly: System.Reflection.AssemblyProductAttribute("CleverensSoft")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CleverensSoft")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
